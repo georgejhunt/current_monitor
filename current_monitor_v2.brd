@@ -16,7 +16,7 @@
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
@@ -554,6 +554,50 @@ Block, Siemens and generic&lt;p&gt;
 </package>
 </packages>
 </library>
+<library name="SparkFun-Displays">
+<description>&lt;h3&gt;SparkFun Electronics' preferred foot prints&lt;/h3&gt;
+In this library you'll find all manner of display devices- LED displays, LCD displays, etc.&lt;br&gt;&lt;br&gt;
+We've spent an enormous amount of time creating and checking these footprints and parts, but it is the end user's responsibility to ensure correctness and suitablity for a given componet or application. If you enjoy using this library, please buy one of our products at www.sparkfun.com.
+&lt;br&gt;&lt;br&gt;
+&lt;b&gt;Licensing:&lt;/b&gt; CC v3.0 Share-Alike You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
+<packages>
+<package name="LCD-16X2">
+<wire x1="-40" y1="18" x2="40" y2="18" width="0.2032" layer="21"/>
+<wire x1="40" y1="18" x2="40" y2="-18" width="0.2032" layer="21"/>
+<wire x1="40" y1="-18" x2="-40" y2="-18" width="0.2032" layer="21"/>
+<wire x1="-40" y1="-18" x2="-40" y2="18" width="0.2032" layer="21"/>
+<wire x1="-35.65" y1="13.15" x2="35.65" y2="13.15" width="0.2032" layer="21"/>
+<wire x1="35.65" y1="13.15" x2="35.65" y2="-13.15" width="0.2032" layer="21"/>
+<wire x1="35.65" y1="-13.15" x2="-35.65" y2="-13.15" width="0.2032" layer="21"/>
+<wire x1="-35.65" y1="-13.15" x2="-35.65" y2="13.15" width="0.2032" layer="21"/>
+<wire x1="-32.25" y1="8.2" x2="32.25" y2="8.2" width="0.2032" layer="47"/>
+<wire x1="32.25" y1="8.2" x2="32.25" y2="-8.2" width="0.2032" layer="47"/>
+<wire x1="32.25" y1="-8.2" x2="-32.25" y2="-8.2" width="0.2032" layer="47"/>
+<wire x1="-32.25" y1="-8.2" x2="-32.25" y2="8.2" width="0.2032" layer="47"/>
+<pad name="1" x="-32" y="15.5" drill="1.016" diameter="1.8796" shape="square"/>
+<pad name="2" x="-29.46" y="15.5" drill="1.016" diameter="1.8796"/>
+<pad name="3" x="-26.92" y="15.5" drill="1.016" diameter="1.8796"/>
+<pad name="4" x="-24.38" y="15.5" drill="1.016" diameter="1.8796"/>
+<pad name="5" x="-21.84" y="15.5" drill="1.016" diameter="1.8796"/>
+<pad name="6" x="-19.3" y="15.5" drill="1.016" diameter="1.8796"/>
+<pad name="7" x="-16.76" y="15.5" drill="1.016" diameter="1.8796"/>
+<pad name="8" x="-14.22" y="15.5" drill="1.016" diameter="1.8796"/>
+<pad name="9" x="-11.68" y="15.5" drill="1.016" diameter="1.8796"/>
+<pad name="10" x="-9.14" y="15.5" drill="1.016" diameter="1.8796"/>
+<pad name="11" x="-6.6" y="15.5" drill="1.016" diameter="1.8796"/>
+<pad name="12" x="-4.06" y="15.5" drill="1.016" diameter="1.8796"/>
+<pad name="13" x="-1.52" y="15.5" drill="1.016" diameter="1.8796"/>
+<pad name="14" x="1.02" y="15.5" drill="1.016" diameter="1.8796"/>
+<pad name="15" x="3.56" y="15.5" drill="1.016" diameter="1.8796"/>
+<pad name="16" x="6.1" y="15.5" drill="1.016" diameter="1.8796"/>
+<text x="-34.29" y="15.24" size="1.016" layer="51" ratio="15">1</text>
+<hole x="-37.5" y="15.5" drill="2.8"/>
+<hole x="-37.5" y="-15.5" drill="2.8"/>
+<hole x="37.5" y="15.5" drill="2.8"/>
+<hole x="37.5" y="-15.5" drill="2.8"/>
+</package>
+</packages>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -789,6 +833,7 @@ Please make sure your boards conform to these design rules.</description>
 <element name="C2" library="SparkFun-Passives" package="CAP-PTH-5MM" value="100nF" x="29.21" y="19.05" rot="R180"/>
 <element name="JP3" library="SparkFun-Passives" package="1X02" value="" x="38.1" y="17.78" rot="R270"/>
 <element name="JP4" library="SparkFun-Passives" package="1X02" value="" x="34.29" y="17.78" rot="R270"/>
+<element name="U2" library="SparkFun-Displays" package="LCD-16X2" value="LCD-16X2SILK" x="40.259" y="27.686"/>
 </elements>
 <signals>
 <signal name="GND" class="2">
@@ -1193,6 +1238,18 @@ Please make sure your boards conform to these design rules.</description>
 <contactref element="JP4" pad="2"/>
 <wire x1="34.25" y1="11.47" x2="34.25" y2="15.2" width="0.3048" layer="1"/>
 <wire x1="34.25" y1="15.2" x2="34.29" y2="15.24" width="0.3048" layer="1"/>
+</signal>
+<signal name="A">
+<contactref element="U2" pad="15"/>
+</signal>
+<signal name="K">
+<contactref element="U2" pad="16"/>
+</signal>
+<signal name="VDD">
+<contactref element="U2" pad="2"/>
+</signal>
+<signal name="VSS">
+<contactref element="U2" pad="1"/>
 </signal>
 </signals>
 </board>
